@@ -37,6 +37,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    text-decoration: none;
+  }
 }
 .site-nav .link1 {
   padding-bottom: 32px;
@@ -47,11 +52,6 @@
   color: #2196f3;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-  text-decoration: none;
-}
 .current::after {
   content: "";
   position: absolute;
@@ -107,8 +107,10 @@
   transition: color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+.site-nav .item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .auth-nav {
@@ -118,19 +120,19 @@
   transition: color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-item-link:focus,
-.contact-item-link:hover {
-  color: var(--accent-color);
-}
-
 .contact-item-link:hover .icon-mail1,
 .contact-item-link:focus .icon-mail1,
 .contact-item-link:hover .icon-mail,
 .contact-item-link:focus .icon-mail {
   fill: var(--accent-color);
 }
+
 .contact-item-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .icon-mail {
@@ -149,4 +151,14 @@
 
 .auth-nav .item + .item {
   margin-left: 50px;
+}
+/* css для портфолио */
+
+.site-nav .link2 {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
 }

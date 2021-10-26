@@ -1,4 +1,4 @@
-.hero-title {
+.hero__title {
   color: #ffffff;
   font-family: Roboto;
   font-weight: 900;
@@ -24,4 +24,19 @@
   line-height: 1.36;
   text-align: center;
   padding: 200px 0;
+}
+
+.hero-portfolio-list {
+  list-style: none;
+}
+
+.hero-portfolio {
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+  padding: 94px 0px;
 }
